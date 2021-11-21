@@ -89,7 +89,7 @@ class Atendimentos extends Component {
 						&nbsp;
 					</div>
 					<div className="col-md-12">
-						<table className="table table-bordered">
+						{this.state.atendimentos.length > 0 ? (<table className="table table-bordered">
 							<thead>
 								<tr>
 									<th> Id </th>
@@ -121,7 +121,9 @@ class Atendimentos extends Component {
 									</tr>
 								))}
 							</tbody>
-						</table>
+						</table>) : (
+							<label className="modal-title">Não existe atendimentos com esse Id !! </label>
+						)}
 					</div>
 				</div>
 				<div className="modal" id="deleteModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
