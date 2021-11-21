@@ -116,7 +116,7 @@ class Prescricao extends Component {
                 <div className="card-header">
                     <h4 className="card-title"> Prescrições </h4>
                     <Link to="/" className="btn btn-primary btn-sm pull-right" > Voltar </Link>
-                    <button type="button" className="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#addModal"> Cadastrar </button>
+                    {/* <button type="button" className="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#addModal"> Cadastrar </button> */}
                 </div>
                 <div className="card-body">
                     <div className="col-md-12">
